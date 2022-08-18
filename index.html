@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d81bd00ed6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Money Expence calculation</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="font-bold text-xl mx-auto text-center text-cyan-500">Money Master <i
+                class="fa-solid fa-sack-dollar text-yellow-500"></i></h1>
+    </header>
+    <main>
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class=" ">
+                    <img class="" src="money.png" alt="...">
+                </div>
+                <div class="bg-gray-200 text-center px-12 ">
+                    <div class="w-3/4 ax-auto">
+                        <h1 class="mt-8">Income</h1>
+                        <div class="text-right mt-5">
+                            <span>Income: </span>
+                            <input class="mb-4 px-2 rounded-sm" type="text" name="" id="income-amount"
+                                placeholder="Enter Amount">
+                        </div>
+                        <h1>Expenses</h1>
+                        <div class="text-right mt-5">
+                            <span>Food: </span>
+                            <input class="mb-4 px-2 rounded-sm" type="text" name="" id="food-amount"
+                                placeholder="Enter Amount"><br>
+                            <span>Rent: </span>
+                            <input class="mb-4 px-2 rounded-sm" type="text" name="" id="rent-amount"
+                                placeholder="Enter Amount"><br>
+                            <span>Clothes: </span>
+                            <input class="mb-4 px-2 rounded-sm" type="text" name="" id="cloth-amount"
+                                placeholder="Enter Amount"><br>
+                        </div>
+
+                        <button class="rounded-md py-2 px-4 bg-blue-400" id="btn-calculate">Calculate</button>
+                    </div>
+                    <div>
+                        <h1>Total Expenses: <span id="total-expenses">00</span></h1>
+                    </div>
+                    <div>
+                        <h1>Balance: <span id="last-balance">00</span></h1>
+                    </div>
+                    <div>
+                        <h1>Save: <input type="text" name=" " id="save-parcent"><span> % </span>
+                            <button class="rounded-md py-2 px-4 bg-blue-400" id="btn-save">Save</button>
+                        </h1>
+                    </div>
+                    <div>
+                        <h1>Saving Amount: <span id="save-amount">00</span></h1>
+                        <h1>Remaining Balance: <span id="remain-balance">00</span></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/utility.js"></script>
+</body>
+
+</html>
